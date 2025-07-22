@@ -1,0 +1,39 @@
+{
+  "connectionString": "${APPLICATIONINSIGHTS_CONNECTION_STRING:}",
+  "role": {
+    "name": "rest-service"
+  },
+  "sampling": {
+    "percentage": 100
+  },
+  "instrumentation": {
+    "logging": {
+      "level": "INFO"
+    },
+    "micrometer": {
+      "enabled": true
+    }
+  },
+  "selfDiagnostics": {
+    "destination": "file",
+    "level": "INFO"
+  },
+  "preview": {
+    "processors": [
+      {
+        "type": "attribute",
+        "include": {
+          "matchType": "strict",
+          "spanNames": ["greeting"]
+        },
+        "actions": [
+          {
+            "key": "service.name",
+            "value": "greeting-service",
+            "action": "upsert"
+          }
+        ]
+      }
+    ]
+  }
+}
