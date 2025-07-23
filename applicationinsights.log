@@ -1,0 +1,4 @@
+2025-07-22 18:55:05.382-07:00 WARN  i.o.s.a.ResourceConfiguration - Found reference to io.opentelemetry.sdk.autoconfigure.internal.EnvironmentResourceProvider in otel.java.enabled.resource.providers. Please update to io.opentelemetry.sdk.autoconfigure.EnvironmentResourceProvider. Support for the old provider name will be removed after 1.49.0.
+2025-07-22 18:55:06.645-07:00 INFO  c.m.applicationinsights.agent - Application Insights Java Agent 3.7.1 started successfully (PID 19836, JVM running for 3.677 s)
+2025-07-22 18:55:06.649-07:00 INFO  c.m.applicationinsights.agent - Java version: 22.0.2, vendor: Oracle Corporation, home: C:\Program Files\Java\jdk-22
+2025-07-22 18:56:05.433-07:00 ERROR c.a.c.h.netty.NettyAsyncHttpClient - io.netty.channel.AbstractChannel$AnnotatedSocketException: Network is unreachable: getsockopt: /169.254.169.254:80
