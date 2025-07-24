@@ -35,7 +35,5 @@ Then access the endpoint
 curl http://localhost:8080/greeting?name=User
 ```
 
-# Application Insights Setup
-# follow this doc 
-
-# https://github.com/Azure-Samples/ApplicationInsights-Java-Samples/blob/main/opentelemetry-api/runtime-attach/CustomLoggerPerClass/README.md
+## Application Insights Setup
+## https://github.com/Azure-Samples/ApplicationInsights-Java-Samples/blob/main/opentelemetry-api/runtime-attach/CustomLoggerPerClass/README.md
